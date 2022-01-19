@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="92b254e7-2696-4c08-b40c-1b61f4cddc78" name="Weather on 96.126.105.251">
+        <fileTransfer rootFolder="/var/www/weather" accessType="SFTP" host="96.126.105.251" port="22" sshConfigId="b142d216-63b2-4731-8878-46e1d36d5f2c" sshConfig="root@96.126.105.251:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
