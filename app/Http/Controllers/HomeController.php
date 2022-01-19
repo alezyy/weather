@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Weather;
 use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 
@@ -21,18 +22,35 @@ class HomeController extends Controller
         if ($res->getStatusCode() == 200) {
             $j = $res->getBody();
             $obj = json_decode($j);
-            //$forecast = $obj->forecast;
         }
-
-        dd($obj);
 
         $fourHour = json_decode(json_encode($obj->forecast), true);
         $fourHour =  $fourHour["forecastday"]["0"]["hour"]["4"];
 
         //Save In MysqQl Table weather
 
-
          $forecast = [];
         return view('forecastview', ["forecast" => $forecast]);
+    }
+
+    public function store(Request $request)
+    {
+        return Weather::create($request->all());
+    }
+
+    public function update(Request $request, $id)
+    {
+        $article = Weather::findOrFail($id);
+        $article->update($request->all());
+
+        return $article;
+    }
+
+    public function delete(Request $request, $id)
+    {
+        $article = Weather::findOrFail($id);
+        $article->delete();
+
+        return 204;
     }
 }

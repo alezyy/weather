@@ -13,6 +13,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/Console/Commands/WeatherForcast4hourEach30minute.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/Console/Kernel.php">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/Http/Controllers/BaseController.php">
           <value>
             <set />
@@ -49,6 +59,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/resources/views/forecastview.blade.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/routes/api.php">
           <value>
             <set />
           </value>
