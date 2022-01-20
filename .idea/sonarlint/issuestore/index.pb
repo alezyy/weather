@@ -19,3 +19,17 @@ C
 config/database.php,6/9/69e3bd8ddf957a32ec5a3b80a87f8cc4bfe36a27
 ?
 config/view.php,e/6/e6430547e4595725fda00ce199f6a9e013a954a3
+V
+&app/Providers/RouteServiceProvider.php,d/4/d4febfd545b5694c9448dd8d6de9bf0531b0db61
+V
+&app/Providers/EventServiceProvider.php,6/d/6d80af2c8eccc15fa62a616067d4270df372f87d
+n
+>database/migrations/2022_01_19_070759_create_weather_table.php,d/3/d3f615a5c950f107dc74d59f880cd79117e0b654
+>
+routes/api.php,b/3/b337d07ab0e7d54bf5547a0321a43ecafbd73ec1
+?
+app/Weather.php,3/8/384c248da26b02701a5db0386110d62d6f42fa12
+F
+app/Console/Kernel.php,7/c/7cc3fc289d685e79a47c29e2cb905c549625e76b
+h
+8app/Console/Commands/WeatherForcast4hourEach30minute.php,5/6/56c27d26b443beb6279fcf173d4501e568c02b7e
