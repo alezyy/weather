@@ -32,8 +32,7 @@ class HomeController extends Controller
         $data=array('city'=>"Montreal", 'forecastday'=>json_encode($fourHour));
         DB::table('weather')->insert($data);
 
-         $forecast = [];
-        return view('forecastview', ["forecast" => $forecast]);
+        return view('welcome', ["forecast" => $fourHour]);
     }
 
 }

@@ -1,7 +1,4 @@
 <div class="links">
-    {{ $forecast->city }} - {{ $forecast->state }} - {{ $forecast->country }}
-    <br>
-    {{ $forecast->latitude }},{{ $forecast->longitude }}
     <br>
     @if (count($forecast->forecast))
         <table class="table">
